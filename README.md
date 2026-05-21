@@ -1,4 +1,4 @@
-# Awesome Bubble Dynamics Research Tools
+# Bubble Dynamics Research Tools
 
 > A curated library of datasets, code, and analysis tools for bubble dynamics research: vapor bubbles during boiling, gas bubbles in liquids, optical imaging, acoustic emissions, thermal imaging, and CFD/SciML simulations.
 

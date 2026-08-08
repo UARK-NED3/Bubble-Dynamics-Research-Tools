@@ -1,0 +1,93 @@
+{
+  "checked_on": "2026-06-26",
+  "github": [
+    {
+      "name": "boiling topic recently updated",
+      "query": "topic:boiling",
+      "sort": "updated",
+      "notes": "Good first pass for repositories that explicitly tag boiling."
+    },
+    {
+      "name": "bubble tracking code",
+      "query": "\"bubble\" \"tracking\" language:Python",
+      "sort": "updated",
+      "notes": "Screen carefully because many results are unrelated to multiphase flows."
+    },
+    {
+      "name": "bubble segmentation code",
+      "query": "\"bubble\" \"segmentation\" language:Python",
+      "sort": "updated",
+      "notes": "Look for experimental images, masks, datasets, notebooks, or publications."
+    },
+    {
+      "name": "flow boiling computer vision",
+      "query": "\"flow boiling\" \"computer vision\"",
+      "sort": "updated",
+      "notes": "Useful for subcooled and microchannel boiling vision workflows."
+    },
+    {
+      "name": "boiling surrogate model",
+      "query": "\"boiling\" \"surrogate\" \"machine learning\"",
+      "sort": "updated",
+      "notes": "Finds neural-operator, digital-twin, and fast-prediction repositories."
+    },
+    {
+      "name": "BubbleML ecosystem",
+      "query": "BubbleML",
+      "sort": "updated",
+      "notes": "Tracks follow-up models such as Bubbleformer and external reproducibility capsules."
+    },
+    {
+      "name": "reduced-order bubble dynamics",
+      "query": "\"Rayleigh-Plesset\" OR \"Keller-Miksis\" bubble dynamics",
+      "sort": "updated",
+      "notes": "Targets the reduced-order category, which remains the weakest mixed paper-plus-license area in the audit."
+    },
+    {
+      "name": "single-bubble sonochemistry simulation",
+      "query": "\"single bubble\" sonochemistry simulation github",
+      "sort": "updated",
+      "notes": "Adds a second reduced-order/sonochemistry lane so discovery is not tied to Rayleigh-Plesset keyword spelling alone."
+    },
+    {
+      "name": "cavitation bubble acoustics",
+      "query": "\"cavitation\" bubble acoustics spherical github",
+      "sort": "updated",
+      "notes": "Targets explicitly licensed cavitation-acoustics and emitted-pressure tooling so reduced-order discovery is not limited to boiling or sonochemistry phrasing."
+    },
+    {
+      "name": "boiling infrared and thermal tools",
+      "query": "\"boiling\" (infrared OR thermal) language:Python",
+      "sort": "updated",
+      "notes": "Targets thermal and IR analysis tools that are underrepresented relative to optical workflows."
+    },
+    {
+      "name": "acoustic emission boiling tools",
+      "query": "\"acoustic emission\" boiling GitHub",
+      "sort": "updated",
+      "notes": "Targets reusable AE processing or labeling code that could reduce the current optical bias in the catalog."
+    }
+  ],
+  "web": [
+    "Bubbleformer boiling transformer GitHub Hugging Face",
+    "\"boiling\" \"bubble\" \"segmentation\" \"GitHub\"",
+    "\"subcooled flow boiling\" \"object detection\" \"tracking\" dataset",
+    "\"bubble dynamics\" \"machine learning\" \"dataset\"",
+    "\"high-speed video\" \"bubble segmentation\" \"open source\"",
+    "\"nucleate boiling\" \"heat flux\" \"computer vision\" code",
+    "\"single-bubble sonoluminescence\" Rayleigh-Plesset GitHub",
+    "\"bubble dynamics\" Keller-Miksis repository",
+    "\"cavitation bubble\" acoustic emission software",
+    "\"MFiX\" license citation software"
+  ],
+  "archives": [
+    "Dryad bubble boiling heat flux",
+    "Mendeley Data subcooled flow boiling bubble",
+    "Harvard Dataverse pool boiling acoustic optical thermal",
+    "Hugging Face BubbleML boiling",
+    "NASA DASHlink boiling",
+    "Mendeley Data sound of boiling critical heat flux",
+    "Dryad transient boiling hysteresis multimodal perspective",
+    "Zenodo cavitation spherical bubble software"
+  ]
+}

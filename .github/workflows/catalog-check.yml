@@ -1,0 +1,33 @@
+name: Catalog check
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 1 * *"
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install plotting dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Validate and render catalog
+        run: python scripts/render_catalog.py
+      - name: Check generated files are committed
+        run: git diff --exit-code
+      - name: Generate discovery report
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/discover_candidates.py --output docs/discovery_candidates.md
+      - name: Upload discovery report
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-candidates
+          path: docs/discovery_candidates.md

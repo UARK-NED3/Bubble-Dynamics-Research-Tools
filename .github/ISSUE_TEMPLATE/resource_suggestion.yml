@@ -1,0 +1,50 @@
+name: Resource suggestion
+description: Suggest a dataset, code repository, model, solver, or utility for the catalog.
+title: "[Resource]: "
+labels: ["resource-suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      description: Name of the tool, dataset, model, or documentation page.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Stable URL
+      description: Repository, dataset, paper, documentation, or model link.
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: regime
+    attributes:
+      label: Physical regime
+      description: Boiling vapor bubbles, gas-liquid bubbles, cavitation, foams, bubbly flow, CFD, or adjacent utility.
+    validations:
+      required: true
+  - type: textarea
+    id: modalities
+    attributes:
+      label: Modalities and outputs
+      description: Images, videos, hydrophone, AE, thermal/IR, CFD fields, masks, trajectories, heat flux, model weights, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: reproducibility
+    attributes:
+      label: Reproducibility notes
+      description: License, examples, dependencies, data size, pretrained weights, validation cases, or known limitations.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Screening checklist
+      options:
+        - label: I checked that this is relevant to bubble dynamics, boiling, multiphase flow, or a directly useful analysis workflow.
+          required: true
+        - label: I included enough information for a maintainer to classify the resource.
+          required: true

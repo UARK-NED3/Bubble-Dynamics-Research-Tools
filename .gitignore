@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+
+# Local discovery reports are triage artifacts.
+docs/discovery_candidates.md
+
+# LaTeX build outputs.
+paper/arxiv/*.aux
+paper/arxiv/*.bbl
+paper/arxiv/*.blg
+paper/arxiv/*.log
+paper/arxiv/*.out
+paper/arxiv/*.toc
+paper/arxiv/*.fls
+paper/arxiv/*.fdb_latexmk
+paper/arxiv/main.pdf

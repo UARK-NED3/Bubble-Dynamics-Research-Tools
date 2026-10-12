@@ -1,0 +1,43 @@
+{
+  "manifest_version": "0.1.0",
+  "resource": {
+    "id": "bubble-dynamics-research-tools",
+    "name": "Bubble Dynamics Research Tools",
+    "kind": "catalog",
+    "visibility": "public"
+  },
+  "canonical_repository": {
+    "url": "https://github.com/UARK-NED3/Bubble-Dynamics-Research-Tools",
+    "default_branch": "main",
+    "reference": "c04e546701757b00bbca920aa22c724d38d723a6",
+    "accessed_on": "2026-10-12"
+  },
+  "lifecycle": {
+    "status": "active_research",
+    "maintainer_review": "pending"
+  },
+  "intended_use": {
+    "users": ["researchers selecting documented bubble-dynamics, boiling, imaging, acoustic, and simulation resources"],
+    "supported_tasks": ["discover datasets and analysis tools", "identify candidate workflow components", "locate published source artifacts"],
+    "not_intended_for": ["a claim that a listed resource is locally reproduced, validated for a new physical regime, or cleared for reuse"]
+  },
+  "interfaces": {
+    "required_inputs": ["research task", "physical system and measurement or simulation modality", "required evidence level"],
+    "outputs": ["curated resource candidates", "documented source leads", "scope and modality context"],
+    "execution": "not_runnable"
+  },
+  "evidence": {
+    "ceiling": "metadata_only",
+    "validation_status": "not_claimed",
+    "limitations": ["Catalog records do not establish a model's transferability, a dataset's rights, or the validity of a result for a new operating regime.", "External datasets, weights, and tools retain their own licenses, citations, and access terms."]
+  },
+  "reuse": {
+    "software_license": "not_declared",
+    "data_rights": "verify_before_reuse",
+    "citation": "not_available"
+  },
+  "links": {
+    "documentation": "https://github.com/UARK-NED3/Bubble-Dynamics-Research-Tools#readme",
+    "issues": "https://github.com/UARK-NED3/Bubble-Dynamics-Research-Tools/issues"
+  }
+}
